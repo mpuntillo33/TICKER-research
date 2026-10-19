@@ -60,10 +60,11 @@ def test_terminal_growth_at_or_above_wacc_is_refused():
 
 def test_bridge_identity():
     v = A.run()["valuation"]
-    assert abs(v["enterprise_value"] - v["debt"] + v["cash"] - v["equity_value"]) < 1e-6
+    assert abs(v["enterprise_value"] - v["debt"] - v["other_debt_like"] + v["cash"] - v["equity_value"]) < 1e-6
     assert abs(v["value_per_share"] * v["shares"] - v["equity_value"]) < 1e-6
     # $100m more debt must cut value by exactly $100m / shares
-    v2 = A.dcf(A.project(A.BASE), A.BASE.wacc, A.BASE.terminal_growth, debt=v["debt"] + 100)
+    v2 = A.dcf(A.project(A.BASE), A.BASE.wacc, A.BASE.terminal_growth, debt=v["debt"] + 100,
+               other_debt_like=v["other_debt_like"])
     assert abs((v["value_per_share"] - v2["value_per_share"]) - 100 / v["shares"]) < 1e-9
 
 
@@ -81,6 +82,13 @@ def test_checks_fail_loudly_on_incoherent_input():
     bad = replace(A.BASE, sga_to_gp_fy2026=0.97, sga_to_gp_long=0.97, capex=2_400.0)
     names = {n for n, ok, _ in A.run(bad)["checks"] if not ok}
     assert "Drivers inside historical band" in names
+
+
+def test_comps_definition_consistency():
+    import comps as C
+    assert all(ok for _, ok, _ in C.consistency_checks())
+    r = C.results()
+    assert r["implied_low"] <= r["implied_median"] <= r["implied_high"]
 
 
 if __name__ == "__main__":
