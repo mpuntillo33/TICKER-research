@@ -1,0 +1,204 @@
+{
+  "as_of": {
+    "bridge_balance_sheet": "2026-09-12",
+    "price_date": "2026-10-16",
+    "filings": [
+      "FY2025 10-K (filed 2026-04-27)",
+      "Q1 FY2026 10-Q (filed 2026-07-28)",
+      "Q2 FY2026 earnings release, 8-K (filed 2026-10-13)"
+    ]
+  },
+  "units": "USD millions except per-share",
+  "drivers": {
+    "growth_fy2026": -0.005,
+    "growth_long": 0.015,
+    "gross_margin_fy2026": 0.268,
+    "gross_margin_long": 0.27,
+    "sga_to_gp_fy2026": 0.94,
+    "sga_to_gp_long": 0.93,
+    "capex": 2000.0,
+    "wacc": 0.077,
+    "terminal_growth": 0.02
+  },
+  "valuation": {
+    "pv_explicit": 3757.43201758156,
+    "terminal_value": 20600.073362744493,
+    "pv_terminal": 14795.75623952168,
+    "enterprise_value": 18553.18825710324,
+    "debt": 9328.2,
+    "cash": 282.0,
+    "other_debt_like": 0.0,
+    "equity_value": 9506.98825710324,
+    "shares": 488.2,
+    "value_per_share": 19.47355234965842,
+    "terminal_share": 0.7974778261551355
+  },
+  "cases": {
+    "Low: comps stay negative, margin slips": 9.505663113824431,
+    "Base": 19.47355234965842,
+    "High: turnaround works by FY2028": 26.324367368846467
+  },
+  "wacc_growth_grid": {
+    "6.7%": {
+      "1.0%": 20.65,
+      "1.5%": 23.83,
+      "2.0%": 27.68,
+      "2.5%": 32.45
+    },
+    "7.2%": {
+      "1.0%": 17.43,
+      "1.5%": 20.05,
+      "2.0%": 23.18,
+      "2.5%": 26.97
+    },
+    "7.7%": {
+      "1.0%": 14.7,
+      "1.5%": 16.89,
+      "2.0%": 19.47,
+      "2.5%": 22.55
+    },
+    "8.2%": {
+      "1.0%": 12.34,
+      "1.5%": 14.2,
+      "2.0%": 16.36,
+      "2.5%": 18.9
+    },
+    "8.7%": {
+      "1.0%": 10.3,
+      "1.5%": 11.89,
+      "2.0%": 13.72,
+      "2.5%": 15.85
+    }
+  },
+  "tornado": [
+    {
+      "driver": "sga_to_gp_long",
+      "swing": 29.13,
+      "low_value": 33.0,
+      "high_value": 3.87
+    },
+    {
+      "driver": "wacc",
+      "swing": 14.65,
+      "low_value": 24.87,
+      "high_value": 10.23
+    },
+    {
+      "driver": "terminal_growth",
+      "swing": 7.85,
+      "low_value": 14.7,
+      "high_value": 22.55
+    },
+    {
+      "driver": "capex",
+      "swing": 6.45,
+      "low_value": 22.7,
+      "high_value": 16.25
+    },
+    {
+      "driver": "sga_to_gp_fy2026",
+      "swing": 3.27,
+      "low_value": 21.57,
+      "high_value": 18.31
+    },
+    {
+      "driver": "gross_margin_long",
+      "swing": 2.22,
+      "low_value": 18.58,
+      "high_value": 20.81
+    },
+    {
+      "driver": "growth_long",
+      "swing": 2.12,
+      "low_value": 18.21,
+      "high_value": 20.33
+    },
+    {
+      "driver": "growth_fy2026",
+      "swing": 1.99,
+      "low_value": 18.91,
+      "high_value": 20.9
+    },
+    {
+      "driver": "gross_margin_fy2026",
+      "swing": 0.03,
+      "low_value": 19.47,
+      "high_value": 19.5
+    }
+  ],
+  "checks": [
+    {
+      "check": "Balance sheet balances every year",
+      "passed": true,
+      "detail": "max |gap| = 0.000000"
+    },
+    {
+      "check": "Cash flow ties to balance-sheet cash",
+      "passed": true,
+      "detail": "max |difference| = 0.000000"
+    },
+    {
+      "check": "Cash stays at or above $100m minimum",
+      "passed": true,
+      "detail": "lowest cash = 329.7"
+    },
+    {
+      "check": "Revolver within $3,562m limit",
+      "passed": true,
+      "detail": "peak revolver = 0.0"
+    },
+    {
+      "check": "Terminal growth below WACC",
+      "passed": true,
+      "detail": "g 2.00% vs WACC 7.70%"
+    },
+    {
+      "check": "Drivers inside historical band",
+      "passed": true,
+      "detail": "all inside"
+    },
+    {
+      "check": "FY2026E EBITDA within 15% of H1 FY2026 run-rate",
+      "passed": true,
+      "detail": "model 3,223 vs run-rate 3,337 (-3.4%)"
+    },
+    {
+      "check": "Enterprise-to-equity bridge reconciles",
+      "passed": true,
+      "detail": "EV 18,553 - debt 9,328 + cash 282 = 9,507"
+    },
+    {
+      "check": "Terminal value below 85% of EV",
+      "passed": true,
+      "detail": "TV share 79.7%"
+    },
+    {
+      "check": "Normalized revenue = filed revenue - 53rd week",
+      "passed": true,
+      "detail": "81,812.5 + 1,360.0 = 83,172.5"
+    },
+    {
+      "check": "Normalized SG&A/GP excludes opioid charge",
+      "passed": true,
+      "detail": "93.41% of gross profit"
+    },
+    {
+      "check": "FY2025 opening balance sheet balances",
+      "passed": true,
+      "detail": "assets 26,765.9 vs liabilities+equity 26,765.9"
+    }
+  ],
+  "fcfe_cross_method_per_share": 16.029574588138917,
+  "wacc_build": {
+    "market_equity": 6352.913190470001,
+    "debt": 9328.2,
+    "d_to_e": 1.468334246089373,
+    "levered_beta": 1.779822661336095,
+    "cost_of_equity": 0.12468465817931432,
+    "after_tax_cost_of_debt": 0.043954999999999994,
+    "equity_weight": 0.40513151797991637,
+    "wacc": 0.07666112896418538
+  },
+  "market_price": 13.09,
+  "reverse_dcf_implied_sga_to_gp_long": 0.9422720603138597
+}

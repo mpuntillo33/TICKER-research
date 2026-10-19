@@ -16,7 +16,7 @@ I do not average that result with my earlier valuations. My September 10, 2026 F
 
 I selected ACI because it is a large, publicly reported food-and-drug retailer whose economics can be traced from store sales and gross margin through working capital, capex, debt, and equity cash flow. It has recognizable operating drivers—identical sales, pharmacy/digital mix, shrink/productivity, inventory, and capital spending—but very thin margins. That makes a small assumption change economically meaningful and testable.
 
-My initial view was cautiously interested because of ACI's scale, local banners, pharmacy, digital, loyalty, Own Brands, and operating cash generation. It became more cautious as I found weak current operating evidence: Q1 FY2026 identical sales excluding fuel declined 0.8%, while gross margin and adjusted EBITDA margin also fell. The underlying research and source log are in [the ACI research report](../TICKER-research/ACI_2026-09-03_report.md) and [source log](../TICKER-research/source.md).
+My initial view was cautiously interested because of ACI's scale, local banners, pharmacy, digital, loyalty, Own Brands, and operating cash generation. It became more cautious as I found weak current operating evidence: Q1 FY2026 identical sales excluding fuel declined 0.8%, while gross margin and adjusted EBITDA margin also fell. The underlying research and source log are in [the ACI research report](../ACI_2026-09-03_report.md) and [source log](../source.md).
 
 ### 2. Company and evidence
 

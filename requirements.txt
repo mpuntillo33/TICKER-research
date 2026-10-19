@@ -1,0 +1,4 @@
+jupyterlab>=4
+ipywidgets>=8
+pandas>=2
+pytest>=7
