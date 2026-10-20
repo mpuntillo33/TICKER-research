@@ -1,0 +1,38 @@
+PROJECT: FIN 43900 Project 1 — Corporate Finance Application (Albertsons Companies, Inc., NYSE: ACI)
+STUDENT: Max Puntillo
+VIDEO: 3 Committee Presentation
+STABLE VIDEO ID/URL: https://youtu.be/asZvgTmsmHU
+TITLE: ACI Project 1 — Video 3: Investment Committee Presentation and Live Demo
+DURATION: 4:18
+REPOSITORY COMMIT/FROZEN VERSION: tag p1-final (github.com/mpuntillo33/ticker-research, branch PROJECT-1)
+
+Corrected from YouTube automatic captions. Finance terms, tickers, names and numbers corrected; filler words removed.
+Script outline prepared with Claude (disclosed in Validation-and-AI-Use.pdf); delivered by Max.
+
+[00:00] Max Puntillo: I'm presenting Albertsons, ticker ACI, to the committee. This is my pro-forma workbench. The engine and checks are locked, and the drivers are bounded by ACI's filings. Base value is $17.89 a share against a $13.09 price.
+
+[00:16] Max Puntillo (live demo — moves the FY2030 SG&A / gross profit slider from 93.0% to 94.0%): All right. So if I drag this to 94%, that updates. So the driver that matters the most is long-run SG&A as a share of gross profit. My base assumes it improves from 94% to 93% by 2030. If I hold it at 94%, meaning no cost recovery, value falls to about $12.69, below the price. Each half point is worth roughly $2.60 a share.
+
+[00:47] Max Puntillo (clicks Reset to base): And reset puts it back to $17.89. That's the sensitivity: the upside depends entirely on the cost coming down.
+
+[00:56] Max Puntillo (drags the slider to 97%; checks panel turns red): All the way to 97%. If someone pushes an input beyond anything ACI has done, the checks go red here. The driver is outside its historical band and the model flags it. Reset, and everything passes again.
+
+[01:15] Max Puntillo: My recommendation is to watch/defer, with a valuation range of $13 to $19 a share. I'm not asking for capital today.
+
+[01:23] Max Puntillo: Here's why. Operations are weakening. Identical sales fell 0.8% in both quarter one and two. Adjusted EBITDA margin dropped to 4.1%, and on October 13th, ACI withdrew guidance pending a business review. The reverse DCF shows the market is pricing no cost recovery at all. So ACI clearly isn't cheap. It's a bet on the turnaround, and that plan isn't due until the quarter four call.
+
+[01:52] Max Puntillo: I didn't average my methods, because they disagreed for clear reasons. The DCF gives $7.92 in the low case, $17.89 in the base, and $24.74 in the high. Peer EV/EBITDA says $26 to $30, but it applies Kroger's and Sprouts' multiples to ACI's falling EBITDA, and ACI's leverage magnifies every turn of multiple. P/E says $5 to $15, but fiscal year 2025 earnings were hit by a $774 million opioid charge. The market's 4.3x multiple versus peers at six to seven times is the market saying it doesn't trust ACI's EBITDA.
+
+[02:41] Max Puntillo: Key assumptions: revenue normalized to 52 weeks; WACC of 7.7%, built from a 5.1% Treasury and a grocery beta; 2% terminal growth; and the $773.8 million opioid obligation subtracted as debt. Terminal value is about 80% of enterprise value, so I treat these results as a range.
+
+[03:06] Max Puntillo: Here's what would change my call. Initiate only if the quarter four turnaround plan puts numbers on cost savings, two straight quarters show identical sales at zero or better with adjusted EBITDA margin of 4.3% or higher, and the price is still at or above $15.* Do not initiate if quarter three identical sales fall below minus 1%, adjusted EBITDA margin drops below 4%, or ACI's net debt ratio rises above 2.75 from 2.42 today. I'd check these at every quarterly filing, starting with quarter three results, expected in January.
+
+[03:42] Max Puntillo: The biggest risk to my own view is that I'm too cautious. If ACI Edge delivers, the high case is about $25. Until a filing shows the cost ratio falling, the evidence doesn't justify paying for that.
+
+[03:57] Max Puntillo: So my ask: approve watch/defer at a $13 to $19 range, put ACI on your monitoring list, and revisit at quarter three results and the quarter four turnaround plan. My sources, tests and AI-use record are in the validation document. Thank you.
+
+* Correction note (Max, Oct 19, 2026): at 03:21 I said "at or above $15"; I misspoke. The intended and written trigger is "at or BELOW $15" (Decision-Memo.pdf, monitoring triggers): initiate only while the price still leaves room below the $17.89 base value. The memo governs.
+
+Timestamp index: live demo — driver move [00:16], reset and sensitivity [00:47], failing check and recovery [00:56]; recommendation and range [01:15]; evidence [01:23]; methods disagreement [01:52]; assumptions [02:41]; conditions and reversal triggers [03:06]; risk to own view [03:42]; committee ask [03:57].
+
+END OF CORRECTED TRANSCRIPT
