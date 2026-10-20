@@ -40,6 +40,6 @@ Checks after change: all pass
 - Actual direction and size: + $0.01
 - Actual decision effect: No decision effect with this change.
 - Prediction reconciliation (matched / partly / missed, and where): Missed
-- Failure diagnosis, or why the action did not change: I think there was too small of a margin shift to have any meaningful benefit to the change in stock price, as it only went up $0.01 instead of my predicted $1.50
+- Failure diagnosis, or why the action did not change: I think there was too small of a margin shift to have any meaningful benefit to the change in stock price, as it only went up $0.01 instead of my predicted $1.40
 - Evidence path: `docs/locked-changed-input-record.md`, commit hashes above and below.
 - Engine note: run on the engine as committed at 7ae0841, before the opioid obligation ($773.8m) was added to the bridge. That item subtracts a constant ≈$1.59/share from both before and after, so the change measured here is unaffected.

@@ -48,7 +48,11 @@ FILING = {
     # Q2 FY2026 earnings release, Form 8-K filed Oct 13, 2026 (bridge date Sep 12, 2026)
     "bridge_debt": 9_328.2,              # total debt including finance leases
     "bridge_cash": 282.0,
-    "diluted_shares": 488.2,             # diluted weighted-average Class A shares, 12 weeks to Sep 12, 2026
+    "diluted_shares": 488.2,
+    # FY2025 10-K Note 12: Opioid Settlement Framework, up to $655.1m (states/subdivisions) + $21.7m
+    # (tribes) + ~$97.0m (attorneys' fees) = $773.8m, paid over ~9 years. Removed from the operating
+    # run-rate (normalization N2), so its cash cost is carried in the bridge as a debt-like claim.
+    "opioid_obligation": 655.1 + 21.7 + 97.0,             # diluted weighted-average Class A shares, 12 weeks to Sep 12, 2026
 }
 
 # Market and discount-rate inputs (each with source and as-of date; see docs/validation-and-ai-use.md)
@@ -288,7 +292,7 @@ def checks(d: Drivers, s: dict[int, dict[str, float]], v: dict[str, float] | Non
         bridge = v["enterprise_value"] - v["debt"] - v["other_debt_like"] + v["cash"]
         res.append(("Enterprise-to-equity bridge reconciles",
                     isclose(bridge, v["equity_value"]) and isclose(v["value_per_share"] * v["shares"], v["equity_value"]),
-                    f"EV {v['enterprise_value']:,.0f} - debt {v['debt']:,.0f} + cash {v['cash']:,.0f} = {v['equity_value']:,.0f}"))
+                    f"EV {v['enterprise_value']:,.0f} - debt {v['debt']:,.0f} - opioid {v['other_debt_like']:,.0f} + cash {v['cash']:,.0f} = {v['equity_value']:,.0f}"))
         res.append(("Terminal value below 85% of EV", v["terminal_share"] < 0.85, f"TV share {v['terminal_share']:.1%}"))
     return res
 
@@ -314,12 +318,12 @@ def base_year_reconciliation() -> list[tuple[str, bool, str]]:
 # ---------------------------------------------------------------------------
 def run(d: Drivers = BASE) -> dict:
     s = project(d)
-    v = dcf(s, d.wacc, d.terminal_growth) if d.terminal_growth < d.wacc else None
+    v = dcf(s, d.wacc, d.terminal_growth, other_debt_like=FILING["opioid_obligation"]) if d.terminal_growth < d.wacc else None
     return {"drivers": asdict(d), "statements": s, "valuation": v, "checks": checks(d, s, v)}
 
 
 def value(d: Drivers) -> float:
-    return dcf(project(d), d.wacc, d.terminal_growth)["value_per_share"]
+    return dcf(project(d), d.wacc, d.terminal_growth, other_debt_like=FILING["opioid_obligation"])["value_per_share"]
 
 
 CASES = {
@@ -337,20 +341,20 @@ def cases() -> dict[str, float]:
 
 def wacc_growth_grid(waccs=(0.067, 0.072, 0.077, 0.082, 0.087), gs=(0.01, 0.015, 0.02, 0.025)):
     s = project(BASE)
-    return {w: {g: dcf(s, w, g)["value_per_share"] for g in gs} for w in waccs}
+    ob = FILING["opioid_obligation"]
+    return {w: {g: dcf(s, w, g, other_debt_like=ob)["value_per_share"] for g in gs} for w in waccs}
 
 
 def tornado(d: Drivers = BASE) -> list[dict]:
     """One-at-a-time: each driver moves to its band low/high, everything else at base."""
     base_s = project(d)
-    base_v = dcf(base_s, d.wacc, d.terminal_growth)
     rows = []
     for k, (_, _, lo, hi, unit, basis) in BOUNDS.items():
         r = {"driver": k, "base": getattr(d, k), "low": lo, "high": hi, "unit": unit}
         for side, x in (("at_low", lo), ("at_high", hi)):
             dd = replace(d, **{k: x})
             s = project(dd)
-            v = dcf(s, dd.wacc, dd.terminal_growth)
+            v = dcf(s, dd.wacc, dd.terminal_growth, other_debt_like=FILING["opioid_obligation"])
             r[side] = {"value_per_share": v["value_per_share"], "fy2030_ebit": s[2030]["ebit"],
                        "fy2030_fcff": s[2030]["fcff"]}
         r["swing"] = abs(r["at_high"]["value_per_share"] - r["at_low"]["value_per_share"])
