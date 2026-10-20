@@ -1,0 +1,36 @@
+PROJECT: FIN 43900 Project 1 — Corporate Finance Application (Albertsons Companies, Inc., NYSE: ACI)
+STUDENT: Max Puntillo
+VIDEO: 2 Codebase Walkthrough
+STABLE VIDEO ID/URL: https://youtu.be/ww1a8tJriTI
+TITLE: ACI Project 1 — Video 2: Codebase and Validation Walkthrough
+DURATION: 3:43
+REPOSITORY COMMIT/FROZEN VERSION: tag p1-final (github.com/mpuntillo33/ticker-research, branch PROJECT-1)
+
+Corrected from YouTube automatic captions. Finance terms, tickers, names and numbers corrected; filler words removed.
+Script outline prepared with Claude (disclosed in Validation-and-AI-Use.pdf); delivered by Max.
+
+[00:00] Max Puntillo: All right. So, this is my project repo for Albertsons, ticker ACI. The decision is whether a fund should initiate, watch/defer, or not initiate a position. The valuation date is the September 12th, 2026 balance sheet, with a price of $13.09 from the October 16th close, on 488.2 million diluted shares. The README shows the decision, the results table and the exact setup commands here.
+
+[00:23] Max Puntillo: All right. So in VS Code we are going to look at our analysis.py here, and as you can see everything runs through this. We have our accounting, filing facts and everything else. So here are the filing facts and the drivers.
+
+[00:45] Max Puntillo: These are the filing facts, each traced to fiscal year 2025. WACC is built from a 5.10% Treasury yield and a grocery industry beta relevered to ACI's leverage, and that comes out to 7.7%. I rejected the provider's raw beta of 0.23 because the stock was pinned to Kroger's deal price from 2022 to 2024.
+
+[01:05] Max Puntillo: Normalization is here. So, two normalizations: I removed the 53rd week, and then took the $773.8 million opioid charge out of SG&A. Since it's out of operations, I subtract it in the bridge as a debt-like claim, so it's counted once.
+
+[01:24] Max Puntillo: So, here are the drivers. These are the nine drivers. Each one has slider bounds and a historical band, with the filing evidence behind it. If a driver leaves its band, a check fails.
+
+[01:36] Max Puntillo: All right. And then here is my accounting engine, which builds the income statement, balance sheet and cash-flow statement for fiscal year 2026 through 2030. Cash comes from the cash-flow statement, never from a plug. Payables run at 24.2 days of cost of sales, from the $4,021 million on the 10-K balance sheet; that fixed the lab issue where growth was actually destroying value. FCFF is NOPAT plus D&A, minus capex, minus the change in working capital.
+
+[02:03] Max Puntillo: And then we have our DCF here, and this discounts FCFF at WACC. Fiscal year 2026 is a stub from September 12th. Terminal value uses Gordon growth at 2%. The bridge takes enterprise value, subtracts debt including finance leases and the opioid claim, adds cash, and divides by 488.2 million shares.
+
+[02:27] Max Puntillo: All right. And then here's my comparables file here. We used Kroger and Sprouts for these comparables, with one EV definition, because EBITDA is after rent. So ACI trades at 4.3 times, against peers at 6.3 to 7.
+
+[02:44] Max Puntillo: Here we have my pre-run PowerShell commands. So we have the Python tests; all these pass. And then my Python tools changed-input run. So this is my highest-risk claim here. My base assumes SG&A as a share of gross profit falls from 94% to 93% by 2030. If it just stays at 94%, with no cost recovery, value drops from $17.89 to about $12.69, below the $13.09 price. So the whole case rests on the turnaround actually cutting costs.
+
+[03:11] Max Puntillo: Okay. And then finally, here's my cold run. To reproduce, I did a fresh clone and a new environment following only the README. The first failure was my Desktop path, because it was in my OneDrive; from my home folder, everything ran: 10 tests passing and $17.89.
+
+[03:27] Max Puntillo: The main limitation: terminal value is about 80% of enterprise value, and ACI withdrew guidance on October 13th, so nothing from management anchors fiscal year 2026. That's why I treat this as a range, not a point estimate. Thank you.
+
+Timestamp index: decision and as-of [00:00]; architecture and data flow [00:23]-[02:27]; key functions project()/dcf() [01:36]-[02:03]; comps [02:27]; tests run [02:44]; highest-risk changed-input test [02:53]; reproduction and cold run [03:11]; limitation [03:27].
+
+END OF CORRECTED TRANSCRIPT

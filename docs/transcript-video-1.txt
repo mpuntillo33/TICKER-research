@@ -1,0 +1,26 @@
+PROJECT: FIN 43900 Project 1 — Corporate Finance Application (Albertsons Companies, Inc., NYSE: ACI)
+STUDENT: Max Puntillo
+VIDEO: 1 Research Evolution
+STABLE VIDEO ID/URL: https://youtu.be/gHld6-5RQ9Q
+TITLE: ACI Project 1 — Video 1: Research Evolution and AI-Output Check
+DURATION: 2:31
+REPOSITORY COMMIT/FROZEN VERSION: tag p1-final (github.com/mpuntillo33/ticker-research, branch PROJECT-1)
+
+Corrected from YouTube automatic captions. Finance terms, tickers, names and numbers corrected; filler words removed.
+Script outline prepared with Claude (disclosed in Validation-and-AI-Use.pdf); delivered by Max.
+
+[00:00] Max Puntillo: All right. So, this is my Video 1 for my Albertsons project: how my research changed from Edition A to Edition B. I wrote Edition A on September 1st in the AI-off Lab 03. I didn't submit it to the checkpoint, so there's no receipt. This is the original file, unchanged since 5:41 that evening, and Brightspace timestamps my Lab 03 checkout in the same window.
+
+[00:22] Max Puntillo: In Edition A, I said watch/defer before any valuation. I had one filing, net debt of $8.75 billion and 547 million shares. My open question was whether ACI's cash flow could carry its debt while it could keep reinvesting.
+
+[00:38] Max Puntillo: All right. So now for my research evolution. In Edition B, the call is still watch/defer, but now it rests on tested evidence: a $13 to $19 range against a $13.09 price. Three things drove that. First, new company evidence: identical sales fell 0.8% in both quarter one and quarter two, and on October 13th ACI withdrew its guidance. Second, my own analysis: once the DCF ran off my pro-forma, the value turned out to hinge on one ratio, SG&A as a share of gross profit. The reverse DCF shows the market price already assumes that ratio never improves. Third, course instruction and peer challenge: I normalized the base year, updated the share count to 488.2 million because of the buybacks, and moved the bridge to the September balance sheet. My Lab 12 partner pushed me on why I allow any recovery at all.
+
+[01:28] Max Puntillo: So the change is mixed. The evidence is sufficient because the reverse DCF and the flat-94% test both show the upside depends entirely on cost recovery that hasn't happened yet. That's why I didn't upgrade.
+
+[01:50] Max Puntillo: So then, the one AI output I checked: Claude flagged that my lab model barely grew payables, which made revenue growth destroy value, and proposed modeling payables at 24.2 days, based on $4,021 million on the balance sheet. I didn't take that on faith. I opened the 10-K balance sheet myself. Here it is: accounts payable, $4,021 million at February 28th, 2026, and total assets of $26,765.9 million, which also matches my model's opening balance sheet. So I accepted it. It made growth add value instead of destroying it.
+
+[02:21] Max Puntillo: Every change and the evidence behind it is in my research-evolution file and the AI-use register.
+
+Timestamp index: Edition A and receipt status [00:00]; Edition A position [00:22]; Edition B and change attribution (company evidence / own analysis / course and peer) [00:38]; sufficiency of evidence [01:28]; AI-generated claim, independent check and acceptance [01:50].
+
+END OF CORRECTED TRANSCRIPT
