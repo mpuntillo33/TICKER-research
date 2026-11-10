@@ -1,0 +1,89 @@
+{
+  "ticker": "JPM",
+  "company": "JPMORGAN CHASE & CO",
+  "cik": "0000019617",
+  "source": "SEC EDGAR companyfacts; 10-K only; USD millions",
+  "retrieved_at_utc": "2026-11-03T22:14:49Z",
+  "rows": [
+    {
+      "fiscal_year_end": "2021-12-31",
+      "revenue": 121649.0,
+      "revenue_tag": "Revenues",
+      "net_income": 48334.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 78084.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": "not found",
+      "capital_spending_tag": "not found",
+      "equity": 294127.0,
+      "equity_tag": "StockholdersEquity",
+      "roe": 0.16433037429409744,
+      "owner_earnings": "not found"
+    },
+    {
+      "fiscal_year_end": "2022-12-31",
+      "revenue": 128695.0,
+      "revenue_tag": "Revenues",
+      "net_income": 37676.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 107119.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": "not found",
+      "capital_spending_tag": "not found",
+      "equity": 292332.0,
+      "equity_tag": "StockholdersEquity",
+      "roe": 0.12888086148625535,
+      "owner_earnings": "not found"
+    },
+    {
+      "fiscal_year_end": "2023-12-31",
+      "revenue": 158104.0,
+      "revenue_tag": "Revenues",
+      "net_income": 49552.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 12974.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": "not found",
+      "capital_spending_tag": "not found",
+      "equity": 327878.0,
+      "equity_tag": "StockholdersEquity",
+      "roe": 0.15112938349020064,
+      "owner_earnings": "not found"
+    },
+    {
+      "fiscal_year_end": "2024-12-31",
+      "revenue": 177556.0,
+      "revenue_tag": "Revenues",
+      "net_income": 58471.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": -42012.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": "not found",
+      "capital_spending_tag": "not found",
+      "equity": 344758.0,
+      "equity_tag": "StockholdersEquity",
+      "roe": 0.16960012530528662,
+      "owner_earnings": "not found"
+    },
+    {
+      "fiscal_year_end": "2025-12-31",
+      "revenue": 182447.0,
+      "revenue_tag": "Revenues",
+      "net_income": 57048.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": -147782.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": "not found",
+      "capital_spending_tag": "not found",
+      "equity": 362438.0,
+      "equity_tag": "StockholdersEquity",
+      "roe": 0.1574007140531622,
+      "owner_earnings": "not found"
+    }
+  ],
+  "checks": {
+    "ROE of 15% or more every year": "fail",
+    "Owner earnings positive every year": "not known",
+    "Owner earnings grew, first year to last": "not known"
+  }
+}

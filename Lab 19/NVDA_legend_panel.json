@@ -1,0 +1,140 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA CORP",
+  "cik": "0001045810",
+  "source": "SEC EDGAR companyfacts; 10-K only; USD millions",
+  "retrieved_at_utc": "2026-11-06T02:40:22Z",
+  "growth_threshold": 0.05,
+  "rows": [
+    {
+      "fiscal_year_end": "2022-01-30",
+      "revenue": 26914.0,
+      "revenue_tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "net_income": 9752.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 9108.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": 976.0,
+      "capital_spending_tag": "PaymentsToAcquireProductiveAssets",
+      "equity": 26612.0,
+      "equity_tag": "StockholdersEquity",
+      "liabilities": 17575.0,
+      "liabilities_tag": "Liabilities",
+      "research_and_development": 5268.0,
+      "research_and_development_tag": "ResearchAndDevelopmentExpense",
+      "roe": 0.3664512250112731,
+      "owner_earnings": 8132.0,
+      "rd_to_revenue": 0.19573456193802483,
+      "liabilities_to_equity": 0.6604163535247257
+    },
+    {
+      "fiscal_year_end": "2023-01-29",
+      "revenue": 26974.0,
+      "revenue_tag": "Revenues",
+      "net_income": 4368.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 5641.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": 1833.0,
+      "capital_spending_tag": "PaymentsToAcquireProductiveAssets",
+      "equity": 22101.0,
+      "equity_tag": "StockholdersEquity",
+      "liabilities": 19081.0,
+      "liabilities_tag": "Liabilities",
+      "research_and_development": 7339.0,
+      "research_and_development_tag": "ResearchAndDevelopmentExpense",
+      "roe": 0.19763811592235644,
+      "owner_earnings": 3808.0,
+      "rd_to_revenue": 0.2720768147104619,
+      "liabilities_to_equity": 0.8633545993393964
+    },
+    {
+      "fiscal_year_end": "2024-01-28",
+      "revenue": 60922.0,
+      "revenue_tag": "Revenues",
+      "net_income": 29760.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 28090.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": 1069.0,
+      "capital_spending_tag": "PaymentsToAcquireProductiveAssets",
+      "equity": 42978.0,
+      "equity_tag": "StockholdersEquity",
+      "liabilities": 22750.0,
+      "liabilities_tag": "Liabilities",
+      "research_and_development": 8675.0,
+      "research_and_development_tag": "ResearchAndDevelopmentExpense",
+      "roe": 0.6924472986178976,
+      "owner_earnings": 27021.0,
+      "rd_to_revenue": 0.14239519385443683,
+      "liabilities_to_equity": 0.529340592861464
+    },
+    {
+      "fiscal_year_end": "2025-01-26",
+      "revenue": 130497.0,
+      "revenue_tag": "Revenues",
+      "net_income": 72880.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 64089.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": 3236.0,
+      "capital_spending_tag": "PaymentsToAcquireProductiveAssets",
+      "equity": 79327.0,
+      "equity_tag": "StockholdersEquity",
+      "liabilities": 32274.0,
+      "liabilities_tag": "Liabilities",
+      "research_and_development": 12914.0,
+      "research_and_development_tag": "ResearchAndDevelopmentExpense",
+      "roe": 0.9187288060811577,
+      "owner_earnings": 60853.0,
+      "rd_to_revenue": 0.0989601293516326,
+      "liabilities_to_equity": 0.4068476054811098
+    },
+    {
+      "fiscal_year_end": "2026-01-25",
+      "revenue": 215938.0,
+      "revenue_tag": "Revenues",
+      "net_income": 120067.0,
+      "net_income_tag": "NetIncomeLoss",
+      "operating_cash_flow": 102718.0,
+      "operating_cash_flow_tag": "NetCashProvidedByUsedInOperatingActivities",
+      "capital_spending": 6042.0,
+      "capital_spending_tag": "PaymentsToAcquireProductiveAssets",
+      "equity": 157293.0,
+      "equity_tag": "StockholdersEquity",
+      "liabilities": 49510.0,
+      "liabilities_tag": "Liabilities",
+      "research_and_development": 18497.0,
+      "research_and_development_tag": "ResearchAndDevelopmentExpense",
+      "roe": 0.7633333969089534,
+      "owner_earnings": 96676.0,
+      "rd_to_revenue": 0.08565884652076058,
+      "liabilities_to_equity": 0.3147628947251308
+    }
+  ],
+  "panel": {
+    "Buffett": {
+      "ROE of 15% or more every year": "pass",
+      "Owner earnings positive every year": "pass",
+      "Owner earnings grew, first year to last": "pass"
+    },
+    "Cathie Wood": {
+      "Revenue grew 5% or more a year, first year to last": "pass",
+      "R&D 5% or more of revenue, latest year": "pass"
+    },
+    "Burry": {
+      "Operating cash flow at least net income every year": "fail",
+      "Liabilities no more than twice equity, latest year": "pass"
+    }
+  },
+  "verdicts": {
+    "Buffett": "Own the business \u2014 all screen checks pass",
+    "Cathie Wood": "Own the business \u2014 all screen checks pass",
+    "Burry": "Pass \u2014 one or more screen checks fail"
+  },
+  "memos": {
+    "Buffett": "# Buffett memo\n\n**Verdict: Own the business \u2014 all screen checks pass**\n\nRevenue moved from 26,914 to 215,938; owner earnings moved from 8,132 to 96,676. Latest ROE is 76.33%. The printed checks are: ROE of 15% or more every year: pass; Owner earnings positive every year: pass; Owner earnings grew, first year to last: pass.",
+    "Cathie Wood": "# Cathie Wood memo\n\n**Verdict: Own the business \u2014 all screen checks pass**\n\nRevenue moved from 26,914 to 215,938; annual growth is 68.30%. Latest R&D is 18,497 and latest R&D \u00f7 revenue is 8.57%. The printed checks are: Revenue grew 5% or more a year, first year to last: pass; R&D 5% or more of revenue, latest year: pass.\n\nThreshold used: 5% annual growth.",
+    "Burry": "# Burry memo\n\n**Verdict: Pass \u2014 one or more screen checks fail**\n\nLatest operating cash flow is 102,718, versus net income of 120,067. Latest liabilities are 49,510, equity is 157,293, and liabilities \u00f7 equity is 0.31. The printed checks are: Operating cash flow at least net income every year: fail; Liabilities no more than twice equity, latest year: pass."
+  }
+}
