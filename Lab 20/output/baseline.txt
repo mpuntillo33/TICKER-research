@@ -1,0 +1,23 @@
+Project 2 readiness decision — education only, not investment advice
+Equity expected-return input: 8.0%
+40/60 benchmark: bills 0%, 10-year 0%, IG bonds 40%, equity 60%
+  expected return 6.80% (minimum 6.50%): PASS
+  volatility 10.46%
+  reserve eligible 0% (minimum 3%): FAIL
+  mandate verdict: FAIL
+Equal weight: bills 25%, 10-year 25%, IG bonds 25%, equity 25%
+  expected return 5.20% (minimum 6.50%): FAIL
+  volatility 5.21%
+  reserve eligible 50% (minimum 3%): PASS
+  mandate verdict: FAIL
+Inverse volatility: bills 84%, 10-year 6%, IG bonds 7%, equity 3%
+  expected return 3.77% (minimum 6.50%): FAIL
+  volatility 1.05%
+  reserve eligible 90% (minimum 3%): PASS
+  mandate verdict: FAIL
+Constrained lowest-risk mix: bills 0%, 10-year 20%, IG bonds 25%, equity 55%
+  expected return 6.51% (minimum 6.50%): PASS
+  volatility 9.44%
+  reserve eligible 20% (minimum 3%): PASS
+  mandate verdict: PASS
+Decision: PILOT, NOT ADOPT. Use the constrained mix only as an education demonstration; reverse this decision if the planning return, reserve rule, or point-in-time data rule cannot be defended.

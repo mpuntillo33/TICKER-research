@@ -16,6 +16,12 @@ The point-in-time data rule and DGS3MO data card are documented in [Lab 17](../.
 - **Prediction:** reducing equity's estimated return should make equity less attractive, lower the selected portfolio's expected return, and could make the 6.5% objective harder to meet. I expect the allocation and possibly the pilot decision to change.
 - **Decision expectation:** remain pilot, not adopt, because the test is a sensitivity check rather than evidence of future performance.
 
+## Locked changed-input record — actual result
+
+`python "Lab 20/readiness.py" --equity-return 7.0` produced the committed `../output/changed-input.txt` result. The selected mix changed from 0% bills / 20% 10-year / 25% investment-grade bonds / 55% equity to 0% / 10% / 10% / 80%: the largest weight change was **25 percentage points**. Its expected return was 6.53%, volatility was 12.94%, and reserve-eligible weight was 10%; it still passed both modeled mandate checks.
+
+The allocation direction did **not** match the simple prediction that lower equity return would reduce the equity weight. On a coarse 5-point feasible grid, the lower estimate makes the original mix fall below the 6.5% threshold, so the least-volatile remaining feasible combination is more equity-heavy. The pilot/not-adopt decision did not change, because this unstable boundary result is exactly the sensitivity that prevents adoption.
+
 ## Cold run, code explanation, and fix
 
 Charlie Garrison ran the repository instructions independently. The cold run had no failures, took 2 minutes, and reached the command-line baseline and mandate verdict. The partner record was used to fix the repository discovery issue: a root README now supplies one command and names the visible GitHub outputs.
