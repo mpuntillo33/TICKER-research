@@ -14,8 +14,9 @@ Project 2 has no Edition A or Edition B (course ruling 2026-10-14), so neither i
 ## Run it (Windows PowerShell, Python 3.12)
 
 ```powershell
-git clone -b PROJECT-2 https://github.com/mpuntillo33/TICKER-research.git
-cd TICKER-research
+cd ~
+git clone -b PROJECT-2 https://github.com/mpuntillo33/TICKER-research.git p2-app
+cd p2-app
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
@@ -32,7 +33,7 @@ python engine.py --out output/visible_output.md
 python engine.py --tbill-yield 3.69     # example changed input; see --help for every driver
 ```
 
-If `Activate.ps1` is blocked, run `Set-ExecutionPolicy -Scope Process Bypass` first, or use `.\.venv\Scripts\python -m streamlit run app.py`.
+Clone into a new folder name (here `p2-app`): if a folder with that name already exists, `git clone` stops and you would end up in an old copy. If `Activate.ps1` is blocked, run `Set-ExecutionPolicy -Scope Process Bypass` first, or use `.\.venv\Scripts\python -m streamlit run app.py`.
 
 ## Repository map
 
