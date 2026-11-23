@@ -1,0 +1,6 @@
+series_id,observation_date,value_pct,as_known_on,source
+DGS3MO,2026-10-02,4.19,2026-10-05,FRED/ALFRED DGS3MO; value hand-checked on FRED page in Lab 17 (2026-10-29)
+DGS3MO,2026-10-05,4.22,2026-10-06,FRED/ALFRED DGS3MO; value hand-checked on FRED page in Lab 17 (2026-10-29)
+DGS3MO,2026-10-06,4.21,2026-10-07,FRED/ALFRED DGS3MO; value hand-checked on FRED page in Lab 17 (2026-10-29)
+DGS10,2026-10-02,5.28,2026-10-05,ALFRED vintage 2026-10-05; Lab 17 known-answer table
+BAA,2026-09-01,6.47,2026-10-05,ALFRED vintage 2026-10-05 (September 2026 monthly); Lab 17 known-answer table
