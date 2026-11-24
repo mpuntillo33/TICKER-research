@@ -91,7 +91,15 @@ The highest-risk claim is that the constrained mix is a stable answer. The stres
 
 ## 6. Cold run
 
-(Max to complete after the cold run: date and time, fresh folder, fresh clone, fresh venv, README commands only, first failure and fix, time taken, recording link.)
+Both runs by Max on his Windows laptop, 2026-11-23, each recorded as one continuous screen recording (kept as evidence, not submitted), using README commands only, starting from the home folder with a fresh clone and a fresh virtual environment.
+
+| Run | Time | Result |
+|---|---|---|
+| 1 | about 6:46 PM, 5 min 51 s | **Failed.** An old `C:\Users\maxpu\TICKER-research` folder from an earlier lab already existed, so `git clone` refused to overwrite it and `cd TICKER-research` entered the old copy. Its requirements installed Jupyter, `pytest` was missing and `app.py` did not exist. |
+| Fix | commit 13c9ecc | README now clones into a dedicated folder (`p2-app`) and warns that an existing folder with that name makes `git clone` stop. |
+| 2 | about 7:07 PM, 6 min | **Passed.** Fresh clone into `p2-app`, fresh venv, `pip install -r requirements.txt`, `python -m pytest -q` showed `12 passed`, and `streamlit run app.py` opened the app with the PILOT banner. |
+
+Lesson: a reproducibility failure can come from the user's machine, not the code, so the README now names its own folder.
 
 ## 7. AI-use register
 
