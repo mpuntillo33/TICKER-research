@@ -1,0 +1,28 @@
+FIN 43900 Project 2 — Video 1: How my system and my thinking changed, plus one AI output I checked
+Speaker: Max Puntillo
+Video: https://youtu.be/BqqYqsYnSxI (Unlisted) · Length: 2:54
+Source: YouTube automatic captions, corrected by the student for finance terms, tickers, names and numbers (filler words left as spoken).
+
+[0:02] Hi, I'm Max and this is my Video 1 for Finance 439 Project 2. First, two things.
+[0:08] I used Claude from Anthropic to help write the code, the tests and the first drafts of my docs, but the analysis and
+[0:16] the decision are mine, and this is education, not investment advice.
+[0:21] So here's where I started, with the Lab 20 Project 2 decision memo.
+[0:29] Um, after Lab 20 I had a "pilot, not adopt" call on a mix of 0% bills, 20% 10-year, 25%
+[0:38] IG bonds and 55% equity, but it was a command-line script, not an app, and something was off with the numbers.
+[0:48] So in my Lab 15 README, here are my universe results.
+[0:55] This is the AI output I checked. When I had Claude review my branch, it said the Lab 20 numbers, the 6.51% return and the
+[1:04] 0/20/25/55 mix, were actually the Meridian training case from Lab 15, just labeled with my tickers. I checked it by
+[1:12] comparing the two files. In Lab 15, my own BIL, IEF, LQD and VT data gave 60%
+[1:21] BIL and 40% VT, not 0, 20, 25 and 55.
+[1:27] So the claim was true, and I accepted it and rebuilt the whole thing on my own data.
+[1:33] So in my visible output here, here are my inputs for the visible output.
+[1:40] Um, that changed my thinking in a second way. When I estimated expected returns from my own five years of history, IEF came
+[1:48] out at negative 1.7% and global equity at 11 to 20% depending on the window. Those aren't believable
+[1:55] forecasts. They just reflect the 2022 rate shock and a big stock rally. So I switched to yields known as of the
+[2:02] decision date: the three-month T-bill yield, the 10-year yield and the Baa yield, each net of the fund's fee. I kept
+[2:11] history only for risk. The historical method is now a stress case instead of the base case.
+[2:18] So now here's my validation and AI-use record,
+[2:27] and um, the third change was in my own testing. For my locked prediction, I first picked a 5% equity premium, but
+[2:34] that exact case was already visible in my stress table, so I switched to 4.5% and wrote down why before running it. So
+[2:42] the decision is still Pilot, but now it rests on my own data, inputs that were actually knowable on October 5th, and a
+[2:49] stress test that shows exactly where it breaks.

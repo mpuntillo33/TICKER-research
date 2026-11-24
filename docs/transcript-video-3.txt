@@ -1,0 +1,33 @@
+FIN 43900 Project 2 — Video 3: Investment committee presentation (opens with the live app)
+Speaker: Max Puntillo
+Video: https://youtu.be/uQaZt4iTnvU (Unlisted) · Length: 3:44
+Source: YouTube automatic captions, corrected by the student for finance terms, tickers, names and numbers (filler words left as spoken).
+
+[0:00] Hi, I'm Max Puntillo, presenting to the reserve committee. I used Claude from Anthropic to help build this app and draft my materials. The analysis and
+[0:07] recommendation are mine. This is education, not investment advice. So for the decision rule, this is the app
+[0:16] I'm running live. The top line is the decision, PILOT, with a constrained mix of 35% T-bills, 5% 10-year Treasuries, 0%
+[0:25] corporates and 60% global equity, an expected 6.55% return with 9.25% volatility.
+[0:35] Down here, we have the two baselines next to my portfolio. Equal weight fails: it only earns 5.72% against the
+[0:45] 6.5% target. The 40/60 benchmark earns enough but fails the reserve rule with 0% in reserve-eligible assets. My constrained mix passes every rule.
+[0:57] Here we're going to override this, and we are going to type 3.69.
+[1:07] So now watch what happens.
+[1:12] Um, if T-bill yields are half a point lower, the mix jumps to 0%
+[1:18] bills and 45% 10-year Treasuries, a 40-point swing from one input.
+[1:25] The stress table marks that as a stop, as you can see here.
+[1:34] So untick that.
+[1:38] And, uh, so here's my recommendation, all things considered: pilot the process on $20 million, 20% of
+[1:47] the reserve, for two quarters at the target mix, 35/5/0/60.
+[1:53] Why it deserves a pilot: it's the only option that meets all three requirements at once: the 6.5% return, the 3% reserve and risk below the benchmark.
+[2:04] Every input is something we could actually have known on October 5th. The T-bill yield was at 4.19%,
+[2:11] the 10-year was at 5.28% and Baa at 6.47%.
+[2:19] Why it isn't ready for the full reserve:
+[2:22] the range is wide. Equity could reasonably be anywhere from 40 to 80%, and two stresses fire my stop rule: the
+[2:30] lower T-bill yield and switching to historical returns. My assumptions also matter: 2.5%
+[2:39] inflation, a 4% equity premium and a 0.75% credit haircut, and the yields are from October 5th, so they have
+[2:47] to be refreshed before money moves. So, Stress & range. So here we
+[2:55] have the monitoring triggers. These are the triggers I would monitor.
+[3:00] Um, down here: re-run if T-bill yields move half a point or at every quarter-
+[3:08] end. Rebalance if any sleeve drifts five points. Pause if a re-run finds no
+[3:14] feasible mix or a 25-point swing. Reject if we break the reserve rule or the risk limit.
+[3:24] I'd bring this back for full adoption only after two clean quarters, and reject it if the base case stops passing the mandate. My ask: approve a $20 million
+[3:34] pilot at 35/5/0/60, with these triggers and a quarter-end review. Thank you.

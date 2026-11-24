@@ -46,7 +46,7 @@ Clone into a new folder name (here `p2-app`): if a folder with that name already
 | `data/rates_as_known.csv` | DGS3MO, DGS10 and BAA values with observation date, vintage date and source (FRED/ALFRED) |
 | `output/` | Visible executed output: base run, locked changed-input run, screenshots |
 | `docs/` | Decision memo, validation and AI-use record, transcripts, submission manifest |
-| `Lab 13` to `Lab 20` | Lab history the app was built from (mandate, baselines, optimizer, provenance gate, data card, readiness check) |
+| `labs/` | Lab history the app was built from: Lab 13 mandate, Lab 14 baselines, Lab 15 optimizer, Lab 16 provenance gate, Lab 17 point-in-time audit and DGS3MO data card, Lab 18–19 EDGAR investor checks, Lab 20 readiness check, Week 13 robo-advisor. Moved from the repository root into `labs/` after the videos were recorded, so the videos show them at the root. |
 
 ## Data sources
 
